@@ -1,0 +1,84 @@
+:root{
+    --hue-neutral:200;
+    --hue-wrong:0;
+    --hue-correct:145;
+
+}
+body{
+    --hue:var(--hue-neutral);
+    padding:0;
+    margin:0;
+    display:flex;
+    width: 100vw;
+    height:100vw;
+    justify-content: center;
+    align-items: center;
+    background-color:cyan;
+}
+
+.container {
+    width: 800px;
+    max-width:80%;
+    background-color:white ;
+    border-radius: 5px;
+    padding:10px;
+    box-shadow: 0 0 10px blue;
+}
+.btn-grid{
+    display:grid;
+    grid-template-columns: repeat(1,auto);
+    gap:10px;
+    margin: 20px 0;
+}
+.btn{
+    --hue:var(--hue-neutral);
+   border: 5px solid pink; 
+   padding: 5px 10px;
+   cursor: pointer;
+   outline: none;
+   border-radius: 8px;
+   font-size: 20px;
+}
+.btn:hover{
+    background-color:deeppink;
+    border-color: blueviolet;
+}
+.start-btn,.next-btn{
+   font-size: 1.5 rem;
+   font-weight: bold;
+   padding: 10px 20px;
+   cursor: pointer;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .hide{
+    display: none;
+ }
+ .correct {
+    background-color: #4caf50;
+    color: white;
+}
+
+.wrong {
+    background-color: #f44336;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+.btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
